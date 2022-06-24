@@ -16,7 +16,16 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ElevatedButton(
-                  onPressed: () {}, child: const Text("Next Screen")),
+                  onPressed: () {
+                    Get.toNamed("/nextScreen");
+                    // Get.toOffNamed("/home");
+                    //Go to home screen and cancel all previous screens / routes
+                    // Get.offAllNamed("/home")
+                    // Dynamic Url Link
+                    // Get.toNamed("/home");
+                    // /home?channel=Ripples Code & content =Flutter GetX,
+                  },
+                  child: const Text("Next Screen")),
               const SizedBox(
                 height: 30,
               ),

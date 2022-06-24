@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:getx_learning/Widgets/bottom_sheet.dart';
 import 'package:getx_learning/home_screen.dart';
 
 class Routes extends StatelessWidget {
