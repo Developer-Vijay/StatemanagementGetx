@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:getx_learning/Widgets/bottom_sheet.dart';
+import 'package:getx_learning/State%20Management/reactive_state.dart';
 import 'package:getx_learning/Widgets/dialog_box.dart';
-import 'package:getx_learning/Widgets/routes.dart';
 import 'package:getx_learning/Widgets/snack_bar.dart';
 import 'package:getx_learning/home_screen.dart';
 import 'package:getx_learning/next_screen.dart';
@@ -36,7 +34,7 @@ class MyApp extends StatelessWidget {
             page: () => NextScreen(),
             transition: Transition.downToUp)
       ],
-      home: HomeScreen(),
+      home: ReactiveState(),
     );
   }
 }
