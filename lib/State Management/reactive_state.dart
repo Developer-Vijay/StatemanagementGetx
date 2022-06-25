@@ -28,7 +28,6 @@ final balance =RxDouble(0.0);
 final items=RxList<String>([]);
 
 
-
 2. use Darts Generics, Rx<Type>
 ===================================
 
