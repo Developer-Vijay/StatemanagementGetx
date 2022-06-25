@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx_learning/GetxController/my_controller.dart';
 
 // Notes
 
@@ -44,8 +45,10 @@ final user = Rx<user>();
  
 
 */
+// ignore: must_be_immutable
 class ReactiveState extends StatelessWidget {
   ReactiveState({Key? key}) : super(key: key);
+
   var count = 0.obs;
 
   void increment() {
