@@ -20,12 +20,14 @@ class HomeIdTestBed extends StatelessWidget {
           GetBuilder<MyControllerUniqueId>(
             id: 'txtCount',
             builder: (controller) {
-              return Text("The Vlue of count is ${controller.count}");
+              return Text(
+                  "The Value of count is ${controller.count}");
             },
           ),
           GetBuilder<MyControllerUniqueId>(
             builder: (controller) {
-              return Text("The Vlue of count is ${controller.count}");
+              return Text(
+                  "The Value of count is ${controller.count}");
             },
           ),
           const SizedBox(
