@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_learning/GetBuilder/builder_home.dart';
+import 'package:getx_learning/ControllerLifeCycle/home_id_test_bed.dart';
+import 'package:getx_learning/ControllerLifeCycle/home_test.dart';
 import 'package:getx_learning/Widgets/dialog_box.dart';
 import 'package:getx_learning/Widgets/snack_bar.dart';
-import 'package:getx_learning/GetxControllerType%20State%20Managemt/home_get_controller_type.dart';
 import 'package:getx_learning/home_screen.dart';
 import 'package:getx_learning/next_screen.dart';
-import 'package:getx_learning/GetxController/testing_of_controller.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +35,6 @@ class MyApp extends StatelessWidget {
               page: () => NextScreen(),
               transition: Transition.downToUp)
         ],
-        home: BuilderHome());
+        home: HomeIdTestBed());
   }
 }
