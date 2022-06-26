@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_learning/ControllerLifeCycle/home_id_test_bed.dart';
-import 'package:getx_learning/ControllerLifeCycle/home_test.dart';
+import 'package:getx_learning/GetxWorkers/worker_home.dart';
 import 'package:getx_learning/Widgets/dialog_box.dart';
 import 'package:getx_learning/Widgets/snack_bar.dart';
 import 'package:getx_learning/home_screen.dart';
@@ -35,6 +34,6 @@ class MyApp extends StatelessWidget {
               page: () => NextScreen(),
               transition: Transition.downToUp)
         ],
-        home: HomeIdTestBed());
+        home: WorkersHome());
   }
 }
