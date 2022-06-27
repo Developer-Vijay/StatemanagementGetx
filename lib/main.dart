@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:get/get_connect/sockets/src/socket_notifier.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_learning/Internalization/home_internalization.dart';
+import 'package:getx_learning/Getx%20Service/service_home.dart';
 import 'package:getx_learning/Internalization/messages.dart';
 import 'package:getx_learning/Widgets/dialog_box.dart';
 import 'package:getx_learning/Widgets/snack_bar.dart';
 import 'package:getx_learning/home_screen.dart';
 import 'package:getx_learning/next_screen.dart';
 
-void main() {
+Future<void> main() async {
+  await initServices();
   runApp(const MyApp());
 }
 
@@ -42,6 +42,6 @@ class MyApp extends StatelessWidget {
               page: () => NextScreen(),
               transition: Transition.downToUp)
         ],
-        home: HomeInternalization());
+        home: ServiceHome());
   }
 }
