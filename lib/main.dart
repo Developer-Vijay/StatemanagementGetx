@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_connect/sockets/src/socket_notifier.dart';
 import 'package:get/get_navigation/get_navigation.dart';
-import 'package:getx_learning/GetxWorkers/worker_home.dart';
+import 'package:getx_learning/Internalization/home_internalization.dart';
+import 'package:getx_learning/Internalization/messages.dart';
 import 'package:getx_learning/Widgets/dialog_box.dart';
 import 'package:getx_learning/Widgets/snack_bar.dart';
 import 'package:getx_learning/home_screen.dart';
@@ -16,6 +18,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+        translations: Messages(), // your Translations
+        locale: Locale('en',
+            'US'), // default translations // to get device locale Get.deviceLocal
+        fallbackLocale: Locale(
+            'en', 'US'), // fallback locale if wrong locale found
+
         defaultTransition: Transition.zoom,
         initialRoute: "/",
         debugShowCheckedModeBanner: false,
@@ -34,6 +42,6 @@ class MyApp extends StatelessWidget {
               page: () => NextScreen(),
               transition: Transition.downToUp)
         ],
-        home: WorkersHome());
+        home: HomeInternalization());
   }
 }
