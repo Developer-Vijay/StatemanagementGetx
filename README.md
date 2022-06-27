@@ -1,6 +1,7 @@
 # getx_learning
+In this I am learnig about statemanagement specially flutter this project will contain about the methods and fucntioons of getx library with commented notes . 
 
-A new Flutter project.
+
 
 ## Getting Started
 
