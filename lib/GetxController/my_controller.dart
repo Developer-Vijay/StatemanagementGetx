@@ -11,6 +11,11 @@ class MyController extends GetxController {
   // void convertToLowerCase() {
   //   student.name.value = student.name.value.toLowerCase();
   // }
+  var count = 0.obs;
+
+  void increment() {
+    count++;
+  }
 
   var student = Student(name: "Vijay", age: 18).obs;
 
